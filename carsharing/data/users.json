@@ -1,0 +1,26 @@
+[
+  {
+    "id" : 1,
+    "email" : "antoxaantoxaa1@gmail.com",
+    "nickname" : "notna",
+    "password" : "123456"
+  },
+  {
+    "id" : 2,
+    "email" : "antoxaantoxaa2@gmail.com",
+    "nickname" : "notna",
+    "password" : "123456"
+  },
+  {
+    "id" : 3,
+    "email" : "antoxaantoxaa3@gmail.com",
+    "nickname" : "notna",
+    "password" : "123456"
+  },
+  {
+    "id" : 4,
+    "email" : "antoxaantoxaa4@gmail.com",
+    "nickname" : "notna",
+    "password" : "123456"
+  }
+]
