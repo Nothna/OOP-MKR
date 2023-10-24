@@ -5,6 +5,9 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Iterator;
 
 public class DataWriter {
     private String filepath;
@@ -59,18 +62,42 @@ public class DataWriter {
         return null;
     }
 
-
-    public void create() {
-
+    public void create(JSONObject newUser) throws Exception {
+        JSONArray users = get();
+        users.add(newUser);
+        save(users);
     }
 
-
-    public void update() {
-
+    public void update(long id, JSONObject updatedUser) throws Exception {
+        JSONArray users = get();
+        Iterator<Object> iterator = users.iterator();
+        while (iterator.hasNext()) {
+            JSONObject user = (JSONObject) iterator.next();
+            if (user.get("id").equals(id)) {
+                user.putAll(updatedUser); // оновлюємо інформацію користувача
+                save(users);
+                return;
+            }
+        }
     }
 
+    public void delete(long id) throws Exception {
+        JSONArray users = get();
+        Iterator<Object> iterator = users.iterator();
+        while (iterator.hasNext()) {
+            JSONObject user = (JSONObject) iterator.next();
+            if (user.get("id").equals(id)) {
+                iterator.remove(); // видаляємо користувача
+                save(users);
+                return;
+            }
+        }
+    }
 
-    public void delete() {
-
+    private void save(JSONArray users) throws IOException {
+        try (FileWriter writer = new FileWriter(filepath)) {
+            writer.write(users.toJSONString());
+            writer.flush();
+        }
     }
 }
