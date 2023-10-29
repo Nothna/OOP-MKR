@@ -1,4 +1,4 @@
-package com.example.carsharing.models;
+package com.example.carsharing.postModule;
 
 import jakarta.annotation.PostConstruct;
 
