@@ -1,1 +1,1 @@
-[{"password":"123456","nickname":"Anton","id":0,"email":"antoxaantoxaa5@gmail.com"},{"password":"123456","nickname":"Anton","id":1,"email":"antoxaantoxaa6@gmail.com"},{"password":"$2a$10$KSCVWN\/648JlyiB.Y71LTOjNVoSCFGMiEHNmbDNKvQmTxI\/tun1Ze","nickname":"Anton","id":2,"email":"antoxaantoxaa10@gmail.com"}]
+[{"password":"hashedpassword","nickname":"TestUser","id":1,"email":"test@example.com"},{"password":"$2a$10$56qRe1BGtCh7GYJv7Z9Jte6H1fTQ\/IQ\/EqjQqZC1IYZ3SiNJbSQIO","nickname":"TestUser","id":3,"email":"test@example.com"}]

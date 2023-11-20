@@ -16,4 +16,10 @@ public class CreateUserDto {
     public String getEmail() {
         return email;
     }
+
+    public CreateUserDto(String nickname, String email, String password){
+        this.nickname = nickname;
+        this.email = email;
+        this.password = password;
+    }
 }

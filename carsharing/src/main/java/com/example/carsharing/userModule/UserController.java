@@ -54,6 +54,7 @@ public class UserController  {
         }
     }
 
+
     @GetMapping("/profile")
     public ResponseEntity getProfile(@RequestHeader("Authorization") String token){
         try{
@@ -68,10 +69,4 @@ public class UserController  {
         }
 
     }
-
-
-
-
-
-
 }

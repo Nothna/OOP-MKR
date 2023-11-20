@@ -4,14 +4,14 @@ import jakarta.annotation.PostConstruct;
 
 public class Post {
     private int id;
-    private String authorEmail;
+    private String userId;
     private String head;
     private String body;
-    private String[] photo;
+    private String photo;
 
-    public Post(int id, String authorEmail, String head, String body, String[] photo){
+    public Post(int id, String authorEmail, String head, String body, String photo){
         this.id = id;
-        this.authorEmail = authorEmail;
+        this.userId = authorEmail;
         this.head = head;
         this.body = body;
         this.photo = photo;
@@ -22,7 +22,7 @@ public class Post {
     }
 
     public String getAuthorEmail() {
-        return authorEmail;
+        return userId;
     }
 
     public String getBody() {
@@ -33,7 +33,8 @@ public class Post {
         return head;
     }
 
-    public String[] getPhoto() {
+    public String getPhoto() {
         return photo;
     }
 }
+
