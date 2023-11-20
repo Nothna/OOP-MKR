@@ -1,23 +1,28 @@
-package com.example.carsharing.controller;
-
-
-import com.example.carsharing.dataWriter.DataWriter;
+package com.example.carsharing.Users;
+import com.example.carsharing.dataWriter.UserData;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
+
 @RestController
 @RequestMapping("/users")
-public class UserController  {
+public class UsersController {
     String usersFilename = "users.json";
     String usersFilepath = System.getProperty("user.dir") + System.getProperty("file.separator") + "data" + System.getProperty("file.separator") + usersFilename;
+
+    private final UserData userData;
+    public UsersController() throws Exception {
+        this.userData = new UserData();
+    }
 
     @GetMapping("/")
     public ResponseEntity getUsers(){
         try{
-            DataWriter dataWriter = new DataWriter(usersFilepath);
-            JSONArray users = dataWriter.get();
+
+            JSONArray users = userData.get();
             return ResponseEntity.ok(users);
         }catch (Exception e){
             return ResponseEntity.badRequest().body(e);
@@ -27,8 +32,8 @@ public class UserController  {
     @GetMapping("/id/{id}")
     public ResponseEntity getUsers(@PathVariable("id") long id){
         try{
-            DataWriter dataWriter = new DataWriter(usersFilepath);
-            JSONObject user = dataWriter.get(id);
+
+            JSONObject user = userData.get(id);
             System.out.println(id);
             System.out.println(user);
             return ResponseEntity.ok(user);
@@ -40,13 +45,13 @@ public class UserController  {
     @GetMapping("/email/{email}")
     public ResponseEntity getUsers(@PathVariable("email") String email){
         try{
-            DataWriter dataWriter = new DataWriter(usersFilepath);
-            JSONObject user = dataWriter.get(email);
+            JSONObject user = userData.get(email);
             return ResponseEntity.ok(user);
         }catch (Exception e){
             return ResponseEntity.badRequest().body(e);
         }
     }
+
 
 
 

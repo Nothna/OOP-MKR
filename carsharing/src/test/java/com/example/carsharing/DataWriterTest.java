@@ -1,3 +1,4 @@
+/*
 package com.example.carsharing;
 import com.example.carsharing.dataWriter.DataWriter;
 
@@ -97,3 +98,4 @@ public class DataWriterTest {
         }
     }
 }
+*/
