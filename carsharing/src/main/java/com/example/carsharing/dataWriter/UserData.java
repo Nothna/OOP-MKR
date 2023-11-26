@@ -2,103 +2,94 @@ package com.example.carsharing.dataWriter;
 
 import com.example.carsharing.Users.dto.CreateUserDto;
 import com.example.carsharing.Users.User;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserData {
-    private String users_file = "users.json";
-    private FileWriter writer;
-    private String filepath = System.getProperty("user.dir") + System.getProperty("file.separator") + "data" + System.getProperty("file.separator") + users_file;
-
-    private JSONParser parser;
-    private FileReader reader;
+    private String usersFilePath = System.getProperty("user.dir") + System.getProperty("file.separator") + "data" + System.getProperty("file.separator") + "users.json";
+    private File usersFile;
+    private final ObjectMapper objectMapper = new ObjectMapper();
     private long idCount;
     private final PasswordEncoder passwordEncoder;
 
-
-    public UserData() throws Exception {
-        this.writer = new FileWriter(filepath, true);
+    public UserData() throws IOException {
+        this.usersFile = new File(usersFilePath);
         this.passwordEncoder = new BCryptPasswordEncoder();
-        this.reader = new FileReader(filepath);
-        this.parser = new JSONParser();
-        JSONArray users = get();
-        this.idCount = users.size(); // This assumes the ID is the size of the array, which may not be accurate if users can be deleted.
-    }
 
-    public JSONArray get() throws Exception {
-        return (JSONArray) this.parser.parse(reader);
-    }
-
-    public JSONObject get(long id) throws Exception {
-        try (FileReader reader = new FileReader(filepath)) {
-            JSONArray users = (JSONArray) this.parser.parse(reader);
-            for (Object obj : users) {
-                JSONObject user = (JSONObject) obj;
-                if (String.valueOf(id).equals(user.get("id").toString())) {
-                    return user;
-                }
-            }
+        if (!this.usersFile.exists() || this.usersFile.length() == 0) {
+            // Handle empty or non-existent file
+            List<User> emptyUsers = new ArrayList<>();
+            this.objectMapper.writeValue(this.usersFile, emptyUsers);
+            this.idCount = 0;
+        } else {
+            // File exists and has content, proceed with parsing
+            List<User> users = this.objectMapper.readValue(this.usersFile, new TypeReference<List<User>>() {});
+            this.idCount = users.size();
         }
-        return null;
     }
 
-    public JSONObject get(String email) throws Exception {
-        JSONArray users = get();
-        for (Object obj : users) {
-            JSONObject user = (JSONObject) obj;
-            if (user.get("email").equals(email)) {
+    public List<User> get() throws IOException {
+        return objectMapper.readValue(this.usersFile, new TypeReference<List<User>>() {});
+    }
+
+    public User get(long id) throws IOException {
+        List<User> users = get();
+        for (User user : users) {
+            if (user.getId() == id) {
                 return user;
             }
         }
         return null;
     }
 
-    public User create(CreateUserDto newUser) throws Exception {
-        JSONArray users = get();
+    public User get(String email) throws IOException {
+        List<User> users = get();
+        for (User user : users) {
+            if (user.getEmail().equals(email)) {
+                return user;
+            }
+        }
+        return null;
+    }
+
+    public User create(CreateUserDto newUser) throws IOException {
+        List<User> users = get();
         String email = newUser.getEmail();
         if (get(email) != null) {
             throw new IOException("User with given email already exists");
         }
-        JSONObject user = new JSONObject();
         String hashedPassword = this.passwordEncoder.encode(newUser.getPassword());
 
-        user.put("id", ++idCount); // Increment the ID count for each new user
-        user.put("nickname", newUser.getNickname());
-        user.put("password", hashedPassword);
-        user.put("email", newUser.getEmail());
-
+        User user = new User(++idCount, newUser.getNickname(), hashedPassword, newUser.getEmail());
         users.add(user);
-        save(users);
-        return new User(idCount, newUser.getNickname(), newUser.getPassword(), newUser.getEmail());
+        objectMapper.writeValue(this.usersFile, users);
+        return user;
     }
 
-    public void update(long id, JSONObject updatedUser) throws Exception {
-        JSONArray users = get();
-        for (Object obj : users) {
-            JSONObject user = (JSONObject) obj;
-            if (String.valueOf(id).equals(user.get("id").toString())) {
-                user.putAll(updatedUser);
-                save(users);
+    public void update(long id, User updatedUser) throws IOException {
+        List<User> users = get();
+        for (User user : users) {
+            if (user.getId() == id) {
+                user.setNickname(updatedUser.getNickname());
+                user.setPassword(updatedUser.getPassword());
+                user.setEmail(updatedUser.getEmail());
+                objectMapper.writeValue(usersFile, users);
                 return;
             }
         }
     }
 
-    public void delete(long id) throws Exception {
-        JSONArray users = get();
-        users.removeIf(obj -> String.valueOf(id).equals(((JSONObject)obj).get("id").toString()));
-        save(users);
-    }
-
-    private void save(JSONArray users) throws IOException {
-        writer.write(users.toJSONString());
-        writer.flush();
+    public void delete(long id) throws IOException {
+        List<User> users = get();
+        users.removeIf(user -> user.getId() == id);
+        objectMapper.writeValue(usersFile, users);
     }
 }
+

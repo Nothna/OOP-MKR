@@ -34,6 +34,7 @@ public class AuthController {
         try{
 
             User createdUser = this.userData.create(user);
+            System.out.println(createdUser);
             String accessToken = JWT.create()
                     .withClaim("id", createdUser.getId())
                     .withClaim("email", createdUser.getEmail())

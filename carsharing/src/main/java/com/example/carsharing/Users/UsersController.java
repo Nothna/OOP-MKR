@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
+import java.util.List;
 
 @RestController
 @RequestMapping("/users")
@@ -22,7 +23,7 @@ public class UsersController {
     public ResponseEntity getUsers(){
         try{
 
-            JSONArray users = userData.get();
+            List<User> users = userData.get();
             return ResponseEntity.ok(users);
         }catch (Exception e){
             return ResponseEntity.badRequest().body(e);
@@ -33,7 +34,7 @@ public class UsersController {
     public ResponseEntity getUsers(@PathVariable("id") long id){
         try{
 
-            JSONObject user = userData.get(id);
+            User user = userData.get(id);
             System.out.println(id);
             System.out.println(user);
             return ResponseEntity.ok(user);
@@ -45,7 +46,7 @@ public class UsersController {
     @GetMapping("/email/{email}")
     public ResponseEntity getUsers(@PathVariable("email") String email){
         try{
-            JSONObject user = userData.get(email);
+            User user = userData.get(email);
             return ResponseEntity.ok(user);
         }catch (Exception e){
             return ResponseEntity.badRequest().body(e);

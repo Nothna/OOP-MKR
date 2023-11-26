@@ -1,0 +1,11 @@
+[ {
+  "id" : 1,
+  "title" : "test",
+  "body" : "test",
+  "type" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2017
+  },
+  "image" : "g"
+} ]

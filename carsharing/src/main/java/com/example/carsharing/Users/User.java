@@ -7,6 +7,7 @@ public class User {
         this.password = password;
         this.nickname = nickname;
     }
+    public User(){}
     private Long id;
     private String email;
     private String password;
@@ -24,5 +25,23 @@ public class User {
         return nickname;
     }
 
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getPassword() {
+        return password;
+    }
 }
