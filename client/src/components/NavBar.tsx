@@ -20,16 +20,17 @@ const NavBar = observer( () => {
     return (
         <Navbar bg="dark" variant= "dark">
             <Nav className="me-auto">
-                <NavLink to={"/home"} style={{color: 'lightcyan', fontFamily: 'monospace', fontSize: '24px', marginLeft: '6px'}}>CarsharinG</NavLink>
+                <NavLink to={"/home"} style={{color: 'lightcyan', fontFamily: 'monospace', fontSize: '24px', marginLeft: '6px'}}>Cariogio</NavLink>
             </Nav>
             <Nav className="ms-auto">
                 {userStore.getIsAuth() ? (
                     <Nav>
-                        <Button variant="outline-light" onClick={() => router('/profile')}>Profile</Button>
+                        <Button variant="outline-light" onClick={() => {userStore.setIsAuth(false); router('/sign_in'); localStorage.removeItem("accessToken")}}>Logout</Button>
+
                     </Nav>
                 ) : (
                     <Nav>
-                        <Button variant="outline-light" onClick={() => router('/login')}>Sign in</Button>
+                        <Button variant="outline-light" onClick={() => router('/sign_in')}>Sign in</Button>
                     </Nav>
                 )}
             </Nav>
