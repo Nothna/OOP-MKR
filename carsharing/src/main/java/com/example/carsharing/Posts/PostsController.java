@@ -1,9 +1,7 @@
 package com.example.carsharing.Posts;
 
 import com.example.carsharing.Posts.dto.CreatePostDto;
-import com.example.carsharing.cars.Car;
-import com.example.carsharing.dataWriter.PostData;
-import org.json.simple.JSONObject;
+import com.example.carsharing.shared.dataWriter.PostData;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -32,12 +30,10 @@ public class PostsController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity create(@RequestBody() CreatePostDto createPostDto){
+    public ResponseEntity create(@RequestPart("data") CreatePostDto createPostDto,
+                                 @RequestAttribute("image") String imageUrl){
         try {
-            //todo: use interceptors for file processing
-
-            System.out.println(createPostDto.getType());
-            Post post = this.postData.create(createPostDto, "g");
+            Post post = this.postData.create(createPostDto, imageUrl);
             return ResponseEntity.ok().body(post);
         }catch (Exception e){
             e.printStackTrace();

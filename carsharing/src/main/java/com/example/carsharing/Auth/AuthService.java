@@ -3,11 +3,8 @@ import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.auth0.jwt.interfaces.JWTVerifier;
-import com.example.carsharing.dataWriter.UserData;
-import jakarta.annotation.PostConstruct;
-import org.json.simple.JSONObject;
+import com.example.carsharing.shared.dataWriter.UserData;
 import org.json.simple.parser.JSONParser;
-import org.springframework.beans.factory.annotation.Value;
 
 public class AuthService{
 

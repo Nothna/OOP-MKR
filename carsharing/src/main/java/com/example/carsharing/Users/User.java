@@ -1,5 +1,7 @@
 package com.example.carsharing.Users;
 
+import com.example.carsharing.shared.Rental;
+
 public class User {
     public User(Long id, String email, String password, String nickname){
         this.id = id;
@@ -9,6 +11,7 @@ public class User {
     }
     public User(){}
     private Long id;
+    private Rental rental;
     private String email;
     private String password;
     private String nickname;
@@ -43,5 +46,13 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    public Rental getRental() {
+        return rental;
+    }
+
+    public void setRental(Rental rental) {
+        this.rental = rental;
     }
 }

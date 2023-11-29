@@ -1,7 +1,8 @@
-package com.example.carsharing.dataWriter;
+package com.example.carsharing.shared.dataWriter;
 
 import com.example.carsharing.Users.dto.CreateUserDto;
 import com.example.carsharing.Users.User;
+import com.example.carsharing.shared.Rental;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -59,6 +60,19 @@ public class UserData {
         return null;
     }
 
+    public User order(long userId, Rental rental) throws IOException{
+        List<User> users = get();
+        for (User user : users) {
+            if (user.getId() == userId) {
+                user.setRental(rental);
+                this.objectMapper.writeValue(this.usersFile, users);
+                return user;
+            }
+        }
+        return null;
+
+    }
+
     public User create(CreateUserDto newUser) throws IOException {
         List<User> users = get();
         String email = newUser.getEmail();
@@ -73,18 +87,6 @@ public class UserData {
         return user;
     }
 
-    public void update(long id, User updatedUser) throws IOException {
-        List<User> users = get();
-        for (User user : users) {
-            if (user.getId() == id) {
-                user.setNickname(updatedUser.getNickname());
-                user.setPassword(updatedUser.getPassword());
-                user.setEmail(updatedUser.getEmail());
-                objectMapper.writeValue(usersFile, users);
-                return;
-            }
-        }
-    }
 
     public void delete(long id) throws IOException {
         List<User> users = get();

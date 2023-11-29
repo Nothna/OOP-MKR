@@ -2,7 +2,7 @@ package com.example.carsharing.Auth;
 
 import com.example.carsharing.Users.User;
 import com.example.carsharing.Users.dto.CreateUserDto;
-import com.example.carsharing.dataWriter.UserData;
+import com.example.carsharing.shared.dataWriter.UserData;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,7 +29,7 @@ public class AuthController {
     }
 
 
-    @PostMapping("/register")
+    @PostMapping("/sign_up")
     public ResponseEntity register(@RequestBody() CreateUserDto user){
         try{
 

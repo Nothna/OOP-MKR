@@ -1,12 +1,9 @@
 package com.example.carsharing.Users;
-import com.example.carsharing.dataWriter.UserData;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+import com.auth0.jwt.interfaces.DecodedJWT;
+import com.example.carsharing.shared.dataWriter.UserData;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.io.IOException;
-import java.util.List;
 
 @RestController
 @RequestMapping("/users")
@@ -19,35 +16,25 @@ public class UsersController {
         this.userData = new UserData();
     }
 
-    @GetMapping("/")
-    public ResponseEntity getUsers(){
+    @GetMapping()
+    public ResponseEntity getUsers(@RequestAttribute("user") DecodedJWT user){
         try{
 
-            List<User> users = userData.get();
-            return ResponseEntity.ok(users);
+            User newUser = userData.get(user.getId());
+            return ResponseEntity.ok(newUser);
         }catch (Exception e){
             return ResponseEntity.badRequest().body(e);
         }
     }
 
-    @GetMapping("/id/{id}")
-    public ResponseEntity getUsers(@PathVariable("id") long id){
-        try{
 
-            User user = userData.get(id);
-            System.out.println(id);
-            System.out.println(user);
-            return ResponseEntity.ok(user);
-        }catch (Exception e){
-            return ResponseEntity.badRequest().body(e);
-        }
-    }
-
-    @GetMapping("/email/{email}")
-    public ResponseEntity getUsers(@PathVariable("email") String email){
+    @PostMapping("/order")
+    public ResponseEntity getUsers(HttpServletRequest request){
         try{
-            User user = userData.get(email);
-            return ResponseEntity.ok(user);
+            /*System.out.println(user);
+            System.out.println(user.getId());
+            //this.userData.order(user.getId(), body);*/
+            return ResponseEntity.ok(request.getAttribute("user"));
         }catch (Exception e){
             return ResponseEntity.badRequest().body(e);
         }

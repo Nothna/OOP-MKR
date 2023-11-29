@@ -1,20 +1,22 @@
 package com.example.carsharing.Posts;
 
-import com.example.carsharing.cars.Car;
+import com.example.carsharing.shared.Car;
 
 public class Post {
     private long id;
     private String title;
     private String body;
-    private Car type;
+    private Car car;
     private String image;
+    private String price;
 
-    public Post(long id, String title, String body, Car type, String image){
+    public Post(long id, String title, String body, Car car, String image, String price){
         this.id = id;
         this.title = title;
         this.body = body;
         this.image = image;
-        this.type = type;
+        this.car = car;
+        this.price = price;
     }
     public Post(){}
 
@@ -48,11 +50,19 @@ public class Post {
         this.title = title;
     }
 
-    public Car getType() {
-        return type;
+    public Car getCar() {
+        return car;
     }
 
-    public void setType(Car type) {
-        this.type = type;
+    public void setCar(Car type) {
+        this.car = type;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 }

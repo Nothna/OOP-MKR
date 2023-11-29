@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d873179f-c47a-4ea1-9360-8babc491f7e8" name="Changes" comment="Додано DataWriter для роботи з даними. CreatePostDto для передачі інформації про пост" />
+    <list default="true" id="d873179f-c47a-4ea1-9360-8babc491f7e8" name="Changes" comment="Додано DataWriter для роботи з даними. CreatePostDto для передачі інформації про пост">
+      <change afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Users/dto/OrderCarDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Users/dto/SignInUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/configs/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/shared/Rental.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/shared/interceptors/JwtInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/shared/interceptors/PostImageInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/carsharing.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/carsharing.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/carsharing.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/carsharing.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_11_2023_12_29_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_11_2023_12_29__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/data/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/data/posts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/data/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Auth/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Auth/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Auth/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Auth/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/CarsharingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/CarsharingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Posts/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Posts/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Posts/PostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Posts/PostsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Posts/dto/CreatePostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Posts/dto/CreatePostDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/configs/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Users/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/Users/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/cars/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/shared/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/cars/Crossover.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/cars/Sedan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/cars/Suv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/cars/Van.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/dataWriter/PostData.java" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/shared/dataWriter/PostData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/dataWriter/PostImageStatic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/dataWriter/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/java/com/example/carsharing/shared/dataWriter/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carsharing/src/main/resources/application.properties.txt" beforeDir="false" afterPath="$PROJECT_DIR$/carsharing/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,29 +93,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;auth&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sofia/IdeaProjects/OOP-MKR&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "auth",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/sofia/IdeaProjects/OOP-MKR",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.CarsharingApplicationTests">
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.CarsharingApplication">
     <configuration name="CarsharingApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -103,7 +138,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="PostDataTest.testCreatePost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -127,7 +162,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="PostDataTest.testDeletePost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -151,7 +186,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="PostDataTest.testGetPostById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -175,7 +210,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="UserDataTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -199,7 +234,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="CarsharingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -240,6 +275,7 @@
       <workItem from="1699547898544" duration="1653000" />
       <workItem from="1700154225358" duration="604000" />
       <workItem from="1700239951315" duration="616000" />
+      <workItem from="1701262311734" duration="209000" />
     </task>
     <task id="LOCAL-00001" summary="Дописано функції у DataWriter та написані тести DataWriterTest">
       <option name="closed" value="true" />

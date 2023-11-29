@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="carsharing:test" external.linked.project.path="$MODULE_DIR$/../../carsharing" external.root.project.path="$MODULE_DIR$/../../carsharing" external.system.id="GRADLE" external.system.module.group="com.example" external.system.module.type="sourceSet" external.system.module.version="0.0.1-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet external-system-id="GRADLE" type="web" name="Web">
+      <configuration>
+        <webroots />
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
     <output-test url="file://$MODULE_DIR$/../../carsharing/build/classes/java/test" />
     <exclude-output />
@@ -11,6 +18,8 @@
     <orderEntry type="module" module-name="carsharing.main" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-web:3.1.4" level="project" />
     <orderEntry type="library" name="Gradle: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.security:spring-security-crypto:6.1.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.auth0:java-jwt:4.4.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-test:3.1.4" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-json:3.1.4" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:3.1.4" level="project" />

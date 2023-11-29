@@ -1,4 +1,5 @@
-package com.example.carsharing;
+/*
+package com.example.carsharing.configs;
 
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -20,6 +21,8 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests((authz) -> authz
                         .requestMatchers(HttpMethod.POST,"/auth/**").hasRole("USER")
                         .requestMatchers(HttpMethod.POST,"/posts/**").hasRole("USER")
+                        .requestMatchers(HttpMethod.POST,"/users/**").hasRole("USER")
+                        .requestMatchers(HttpMethod.GET,"/users/**").hasRole("USER")
                         .anyRequest().authenticated()
 
                 );
@@ -28,3 +31,4 @@ public class SecurityConfiguration {
 
     }
 }
+*/

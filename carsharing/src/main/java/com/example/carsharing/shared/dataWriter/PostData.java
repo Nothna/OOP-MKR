@@ -1,8 +1,7 @@
-package com.example.carsharing.dataWriter;
+package com.example.carsharing.shared.dataWriter;
 
 import com.example.carsharing.Posts.Post;
 import com.example.carsharing.Posts.dto.CreatePostDto;
-import com.example.carsharing.cars.Car;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
@@ -49,7 +48,7 @@ public class PostData {
 
     public Post create(CreatePostDto newPost, String imageUrl) throws IOException {
         List<Post> posts = get();
-        Post post = new Post(++idCount, newPost.getTitle(), newPost.getBody(), newPost.getType(), imageUrl);
+        Post post = new Post(++idCount, newPost.getTitle(), newPost.getBody(), newPost.getCar(), imageUrl, newPost.getPrice());
         posts.add(post);
         save(posts);
         return post;
@@ -62,7 +61,7 @@ public class PostData {
                 post.setTitle(updatedPost.getTitle());
                 post.setBody(updatedPost.getBody());
                 post.setImage(updatedPost.getImage());
-                post.setType(updatedPost.getType());
+                post.setCar(updatedPost.getCar());
                 save(posts);
                 return;
             }
