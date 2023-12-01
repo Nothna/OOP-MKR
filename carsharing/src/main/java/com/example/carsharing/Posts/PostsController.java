@@ -7,6 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.HttpClientErrorException;
 
+import java.util.List;
+
 @RestController()
 @RequestMapping("/posts")
 public class PostsController {
@@ -15,13 +17,27 @@ public class PostsController {
         this.postData = new PostData();
     }
 
-    @GetMapping()
-    public ResponseEntity getById(@RequestParam("id") Long id){
+    @GetMapping("/{id}")
+    public ResponseEntity getById(@PathVariable("id") Long id){
         try {
 
             Post post = this.postData.get(id);
             if (post == null) throw new HttpClientErrorException(HttpStatus.NOT_FOUND, "Post not found");
             return ResponseEntity.ok().body(post);
+        } catch(Exception e){
+            throw new HttpClientErrorException(HttpStatus.BAD_REQUEST, "Invalid request");
+
+        }
+
+    }
+
+    @GetMapping()
+    public ResponseEntity getAll(){
+        try {
+
+            List<Post> posts = this.postData.get();
+            if (posts == null) throw new HttpClientErrorException(HttpStatus.NOT_FOUND, "Post not found");
+            return ResponseEntity.ok().body(posts);
         } catch(Exception e){
             throw new HttpClientErrorException(HttpStatus.BAD_REQUEST, "Invalid request");
 

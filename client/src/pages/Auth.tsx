@@ -12,6 +12,7 @@ const Auth = () => {
         email: '',
         password: '',
     });
+    const [errorMsg, setErrorMsg] = useState("");
 
     const location = useLocation();
     const endPoint = location.pathname;
@@ -21,22 +22,28 @@ const Auth = () => {
 
     const pushData = async (event: FormEvent) =>{
         event.preventDefault();
-
-
-        switch(endPoint){
-            case "/sign_in":
-                accessToken = await UserService.signIn(omit(formData, "nickname"));
-                userStore.setIsAuth(true);
-                localStorage.setItem("accessToken", accessToken);
-                router("/home")
-                break;
-            case '/sign_up':
-                accessToken = await UserService.signIn(formData);
-                userStore.setIsAuth(true);
-                localStorage.setItem("accessToken", accessToken);
-                router("/home")
-                break;
+        try{
+            switch(endPoint){
+                case "/sign_in":
+                    accessToken = await UserService.signIn(omit(formData, "nickname"));
+                    userStore.setIsAuth(true);
+                    localStorage.setItem("accessToken", accessToken);
+                    router("/home")
+                    break;
+                case '/sign_up':
+                    accessToken = await UserService.signUp(formData);
+                    userStore.setIsAuth(true);
+                    localStorage.setItem("accessToken", accessToken);
+                    router("/home")
+                    break;
+            }
+        } catch(e){
+            // @ts-ignore
+            setErrorMsg(e.message);
         }
+
+
+
 
     }
 
@@ -98,6 +105,7 @@ const Auth = () => {
 
 
                 </Form>
+                <label style={{color: "red"}}>{errorMsg}</label>
             </Card>
         </Container>
     );

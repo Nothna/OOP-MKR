@@ -20,7 +20,7 @@ public class PostImageInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
-        String uploadDirectory = System.getProperty("user.dir") + System.getProperty("file.separator") + "static" + System.getProperty("file.separator") + "image";
+        String uploadDirectory = System.getProperty("user.dir") + "/src/main/resources/static/image";
 
         try{
             if (request instanceof MultipartHttpServletRequest) {

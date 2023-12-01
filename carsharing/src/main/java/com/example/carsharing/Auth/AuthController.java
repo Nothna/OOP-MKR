@@ -1,5 +1,6 @@
 package com.example.carsharing.Auth;
 
+import com.example.carsharing.Auth.dto.SignUserDto;
 import com.example.carsharing.Users.User;
 import com.example.carsharing.Users.dto.CreateUserDto;
 import com.example.carsharing.shared.dataWriter.UserData;
@@ -32,9 +33,7 @@ public class AuthController {
     @PostMapping("/sign_up")
     public ResponseEntity register(@RequestBody() CreateUserDto user){
         try{
-
             User createdUser = this.userData.create(user);
-            System.out.println(createdUser);
             String accessToken = JWT.create()
                     .withClaim("id", createdUser.getId())
                     .withClaim("email", createdUser.getEmail())
@@ -44,6 +43,22 @@ public class AuthController {
 
         } catch (Exception e) {
             e.printStackTrace();
+            return ResponseEntity.badRequest().body("Error: Incorrect register credentials");
+        }
+    }
+
+    @PostMapping("/sign_in")
+    public ResponseEntity register(@RequestBody() SignUserDto user){
+        try{
+            User createdUser = this.userData.get(user.getEmail());
+            String accessToken = JWT.create()
+                    .withClaim("id", createdUser.getId())
+                    .withClaim("email", createdUser.getEmail())
+                    .withExpiresAt(new Date(System.currentTimeMillis() + jwtExpirationTime))
+                    .sign(algorithm);
+            return ResponseEntity.ok().body(accessToken);
+
+        } catch (Exception e) {
             return ResponseEntity.badRequest().body("Error: Incorrect register credentials");
         }
     }

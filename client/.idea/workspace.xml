@@ -5,31 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ccca4f-25bf-4b4e-a137-4e44708b80a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/API/user/dto/sign-in-user.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/API/user/dto/sign-up-user.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/API/user/user-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Auth.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/appRouter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/UserStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppRouter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NavBar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/PostList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/userStore.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Auth/dto/SignUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/configs/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/configs/StaticResourceConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/2e9dd98c-7d12-4712-98ee-b6b8e6fe2194.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/3b28b794-1ef6-4661-a5b3-3a2fb951fa3b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/5389974f-f24f-45a6-a33f-abcf18d23e64.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/9f7ec26f-eb00-4f39-9dfd-f97f039e8504.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/f15fc3db-20b4-4592-98c2-105a4729a6af.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/API/post/post-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/API/shared/Car.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/API/shared/Post.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PostItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/data/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/data/posts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/data/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Auth/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Auth/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Posts/PostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Posts/PostsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/configs/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/configs/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/configs/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/shared/interceptors/PostImageInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/shared/interceptors/PostImageInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/user/user-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/user/user-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Auth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +56,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2Yqp1u5DK7GISU5R7PnhzjYuX4g" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,8 +72,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/notna/Projects/MKR-OOP/client/src/components",
     "node.js.detected.package.eslint": "true",
@@ -84,6 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701262753128</updated>
       <workItem from="1701262756784" duration="4725000" />
+      <workItem from="1701419042176" duration="5018000" />
     </task>
     <servers />
   </component>
