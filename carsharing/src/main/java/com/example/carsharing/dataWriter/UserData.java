@@ -2,45 +2,27 @@ package com.example.carsharing.dataWriter;
 
 import com.example.carsharing.dto.CreateUserDto;
 import com.example.carsharing.userModule.User;
-import jakarta.annotation.PostConstruct;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.mindrot.jbcrypt.BCrypt;
-
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Iterator;
 
 public class UserData {
-    String users_file = "users.json";
-    String filepath = System.getProperty("user.dir") + System.getProperty("file.separator") + "data" + System.getProperty("file.separator") + users_file;
+    private String users_file = "users.json";
+    private FileWriter fileWriter;
+    private String filepath = System.getProperty("user.dir") + System.getProperty("file.separator") + "data" + System.getProperty("file.separator") + users_file;
 
     private JSONParser parser = new JSONParser();
-    private FileReader reader = new FileReader(filepath);
-
     private long idCount;
 
-
-    // class constructor
-    public UserData() throws Exception{
-
-        try{
-            JSONArray users = get();
-
-            this.idCount = users.size();
-
-        }catch (Exception e){
-            throw e;
-        }
-
+    // No-argument constructor
+    public UserData() throws Exception {
+        JSONArray users = get();
+        this.idCount = users.size(); // This assumes the ID is the size of the array, which may not be accurate if users can be deleted.
     }
-    @PostConstruct()
-    public void init() throws Exception{
-
-    }
-
 
     public JSONArray get() throws Exception {
         try (FileReader reader = new FileReader(filepath)) {
@@ -53,7 +35,7 @@ public class UserData {
             JSONArray users = (JSONArray) this.parser.parse(reader);
             for (Object obj : users) {
                 JSONObject user = (JSONObject) obj;
-                if (user.get("id").equals(id)) {
+                if (String.valueOf(id).equals(user.get("id").toString())) {
                     return user;
                 }
             }
@@ -62,33 +44,26 @@ public class UserData {
     }
 
     public JSONObject get(String email) throws Exception {
-        try (FileReader reader = new FileReader(filepath)) {
-            JSONParser parser = new JSONParser();
-            JSONArray users = (JSONArray) parser.parse(reader);
-            for (Object obj : users) {
-                JSONObject user = (JSONObject) obj;
-                if (user.get("email").equals(email)) {
-                    return user;
-                }
+        JSONArray users = get();
+        for (Object obj : users) {
+            JSONObject user = (JSONObject) obj;
+            if (user.get("email").equals(email)) {
+                return user;
             }
         }
         return null;
     }
 
-
     public User create(CreateUserDto newUser) throws Exception {
         JSONArray users = get();
-
         String email = newUser.getEmail();
         if (get(email) != null) {
             throw new IOException("User with given email already exists");
         }
         JSONObject user = new JSONObject();
-
         String hashedPassword = BCrypt.hashpw(newUser.getPassword(), BCrypt.gensalt());
 
-
-        user.put("id", idCount);
+        user.put("id", ++idCount); // Increment the ID count for each new user
         user.put("nickname", newUser.getNickname());
         user.put("password", hashedPassword);
         user.put("email", newUser.getEmail());
@@ -98,14 +73,12 @@ public class UserData {
         return new User(idCount, newUser.getNickname(), newUser.getPassword(), newUser.getEmail());
     }
 
-
     public void update(long id, JSONObject updatedUser) throws Exception {
         JSONArray users = get();
-        Iterator<Object> iterator = users.iterator();
-        while (iterator.hasNext()) {
-            JSONObject user = (JSONObject) iterator.next();
-            if (user.get("id").equals(id)) {
-                user.putAll(updatedUser); // оновлюємо інформацію користувача
+        for (Object obj : users) {
+            JSONObject user = (JSONObject) obj;
+            if (String.valueOf(id).equals(user.get("id").toString())) {
+                user.putAll(updatedUser);
                 save(users);
                 return;
             }
@@ -114,23 +87,14 @@ public class UserData {
 
     public void delete(long id) throws Exception {
         JSONArray users = get();
-        Iterator<Object> iterator = users.iterator();
-        while (iterator.hasNext()) {
-            JSONObject user = (JSONObject) iterator.next();
-            if (user.get("id").equals(id)) {
-                iterator.remove(); // видаляємо користувача
-                save(users);
-                return;
-            }
-        }
+        users.removeIf(obj -> String.valueOf(id).equals(((JSONObject)obj).get("id").toString()));
+        save(users);
     }
 
-    private void save(JSONArray users) throws IOException {
-        try (FileWriter writer = new FileWriter(filepath)) {
-            writer.write(users.toJSONString());
-            writer.flush();
+    public void save(JSONArray users) throws IOException {
+        try (FileWriter fileWriter = new FileWriter(filepath)) {
+            fileWriter.write(users.toJSONString());
+            fileWriter.flush();
         }
     }
-
-
 }

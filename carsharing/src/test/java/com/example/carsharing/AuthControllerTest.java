@@ -16,8 +16,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import static org.hamcrest.Matchers.containsString;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.hamcrest.Matchers.matchesPattern;
 
 @SpringBootTest
@@ -31,7 +29,7 @@ class AuthControllerTest {
     @MockBean
     private UserData userData;
 
-    // Допоміжний метод для конвертації об'єктів в JSON
+
     private String asJsonString(final Object obj) {
         try {
             return new ObjectMapper().writeValueAsString(obj);
@@ -49,16 +47,14 @@ class AuthControllerTest {
         User mockUser = new User(1, "nickname", uniqueEmail, "password");
         when(userData.create(any(CreateUserDto.class))).thenReturn(mockUser);
 
-        // Create a CreateUserDto object and convert it to JSON
         CreateUserDto newUser = new CreateUserDto("nickname", uniqueEmail, "password");
         String newUserJson = asJsonString(newUser);
 
-        // Perform POST request and expect a successful response
         mockMvc.perform(post("/auth/register")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(newUserJson))
                 .andExpect(status().isOk())
-                .andExpect(content().string(matchesPattern("^[A-Za-z0-9-_=]+\\.[A-Za-z0-9-_=]+\\.[A-Za-z0-9-_.+/=]*$"))); // Regex for JWT format
+                .andExpect(content().string(matchesPattern("^[A-Za-z0-9-_=]+\\.[A-Za-z0-9-_=]+\\.[A-Za-z0-9-_.+/=]*$")));
     }
 
 
@@ -70,7 +66,7 @@ class AuthControllerTest {
         CreateUserDto newUser = new CreateUserDto("nickname", "test@example.com", "password");
         String newUserJson = asJsonString(newUser);
 
-        // Perform POST request and expect a BadRequest response
+
         mockMvc.perform(post("/auth/register")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(newUserJson))
