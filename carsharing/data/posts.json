@@ -1,66 +1,14 @@
 [ {
   "id" : 1,
-  "title" : "mersedes",
-  "body" : "mersedes lol",
+  "title" : "Updated Title",
+  "body" : "Updated Body",
   "car" : {
-    "manufacturer" : "mersedes",
-    "model" : "some model",
-    "year" : 2018,
+    "manufacturer" : null,
+    "model" : null,
+    "year" : 0,
     "wheelBase" : null,
-    "seats" : 4
+    "seats" : 0
   },
-  "image" : "2e9dd98c-7d12-4712-98ee-b6b8e6fe2194.jpg",
-  "price" : "10 USD/H"
-}, {
-  "id" : 2,
-  "title" : "mersedes",
-  "body" : "mersedes lol",
-  "car" : {
-    "manufacturer" : "mersedes",
-    "model" : "some model",
-    "year" : 2018,
-    "wheelBase" : null,
-    "seats" : 4
-  },
-  "image" : "9f7ec26f-eb00-4f39-9dfd-f97f039e8504.jpg",
-  "price" : "10 USD/H"
-}, {
-  "id" : 3,
-  "title" : "mersedes",
-  "body" : "mersedes lol",
-  "car" : {
-    "manufacturer" : "mersedes",
-    "model" : "some model",
-    "year" : 2018,
-    "wheelBase" : null,
-    "seats" : 4
-  },
-  "image" : "f15fc3db-20b4-4592-98c2-105a4729a6af.jpg",
-  "price" : "10 USD/H"
-}, {
-  "id" : 4,
-  "title" : "mersedes",
-  "body" : "mersedes lol",
-  "car" : {
-    "manufacturer" : "mersedes",
-    "model" : "some model",
-    "year" : 2018,
-    "wheelBase" : null,
-    "seats" : 4
-  },
-  "image" : "3b28b794-1ef6-4661-a5b3-3a2fb951fa3b.jpg",
-  "price" : "10 USD/H"
-}, {
-  "id" : 5,
-  "title" : "mersedes",
-  "body" : "mersedes lol",
-  "car" : {
-    "manufacturer" : "mersedes",
-    "model" : "some model",
-    "year" : 2018,
-    "wheelBase" : null,
-    "seats" : 4
-  },
-  "image" : "5389974f-f24f-45a6-a33f-abcf18d23e64.jpg",
-  "price" : "10 USD/H"
+  "image" : "updatedimage.jpg",
+  "price" : "100"
 } ]
