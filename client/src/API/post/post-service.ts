@@ -7,4 +7,8 @@ export class PostService{
         return response.data;
 
     }
+    public static async getById(id: number): Promise<Post>{
+        const response = await axios.get(process.env.REACT_APP_SERVER_URL + "/posts/" + id);
+        return response.data;
+    }
 }

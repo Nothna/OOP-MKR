@@ -2,6 +2,8 @@ import React, {createContext} from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import UserStore from "./store/UserStore";
+import {AppRouter} from "./router/appRouter";
+import {RouterProvider} from "react-router-dom";
 
 export const Context = createContext({userStore: new UserStore()});
 
@@ -15,7 +17,9 @@ root.render(
                 userStore: new UserStore()
             }}
         >
-            <App />
+            <RouterProvider
+                router={AppRouter}
+            />
         </Context.Provider>
 
 

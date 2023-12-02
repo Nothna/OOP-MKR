@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext} from 'react';
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import Navbar from "react-bootstrap/Navbar";

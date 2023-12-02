@@ -31,11 +31,10 @@ dependencies {
 }
 
 
+tasks.named('bootRun') {    // Запускаємо тести перед запуском додатку
+    dependsOn 'test'}
 tasks.named('test') {
-    useJUnitPlatform()
-
-    //ignoreFailures = true // Видаліть або закоментуйте цей рядок, якщо ви хочете, щоб збої тестів впливали на результат побудови
-    finalizedBy 'jacocoTestReport'
+    // Після виконання тестів генеруємо звіт JaCoCo    finalizedBy 'jacocoTestReport'
 }
 
 jacocoTestReport {

@@ -5,45 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ccca4f-25bf-4b4e-a137-4e44708b80a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../carsharing/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Auth/dto/SignUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/configs/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/configs/StaticResourceConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/2e9dd98c-7d12-4712-98ee-b6b8e6fe2194.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/3b28b794-1ef6-4661-a5b3-3a2fb951fa3b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/5389974f-f24f-45a6-a33f-abcf18d23e64.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/9f7ec26f-eb00-4f39-9dfd-f97f039e8504.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/f15fc3db-20b4-4592-98c2-105a4729a6af.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/API/post/post-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/API/shared/Car.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/API/shared/Post.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PostItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/360bedf3-67b0-4e04-afe7-e6126264be7f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/55922da1-bea4-49b5-8d6e-6c5113299199.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/56980697-4622-44fb-b4ae-69cdd4e1c83b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/6de5aeb1-14d7-4098-970c-dcd70fe2b0c5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/7570901e-3cba-4b9f-97dd-772bf8f6aa40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/8a4cbdad-f9de-401c-a27e-106ece4dcc04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/a2f0d671-38ef-4378-b6d2-857db2f657a6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/a90cfdfd-34e5-487a-a563-de07c8a525de.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/aa69c866-9631-4c11-bcaa-367bd9fb73e8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/b7d7dd54-3c7c-428e-a1db-e55286454e6a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/bf9d6791-3d8c-4762-8571-8979cd5b86d2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/c2ac646b-721e-406b-a1a7-91700945debd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/da556408-9558-4acf-9da3-8c7256616def.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/e4e6ddc3-d29f-4dda-be76-e67c9291f721.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ItemDetail.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/data/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/data/posts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carsharing/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/data/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carsharing/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carsharing/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Auth/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Auth/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Posts/PostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Posts/PostsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/Users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/configs/SecurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/configs/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/configs/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/shared/interceptors/PostImageInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/shared/interceptors/PostImageInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/post/post-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/post/post-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/API/user/user-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/user/user-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Auth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/appRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/appRouter.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,24 +62,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/notna/Projects/MKR-OOP/client/src/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/home/notna/Projects/MKR-OOP/client/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/notna/Projects/MKR-OOP/client/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/notna/Projects/MKR-OOP/client/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
@@ -104,6 +97,7 @@
       <updated>1701262753128</updated>
       <workItem from="1701262756784" duration="4725000" />
       <workItem from="1701419042176" duration="5018000" />
+      <workItem from="1701533571205" duration="5375000" />
     </task>
     <servers />
   </component>

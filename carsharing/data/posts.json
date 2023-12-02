@@ -3,12 +3,181 @@
   "title" : "Updated Title",
   "body" : "Updated Body",
   "car" : {
-    "manufacturer" : null,
-    "model" : null,
-    "year" : 0,
-    "wheelBase" : null,
-    "seats" : 0
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
   },
-  "image" : "updatedimage.jpg",
-  "price" : "100"
+  "image" : "a90cfdfd-34e5-487a-a563-de07c8a525de.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 2,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "6de5aeb1-14d7-4098-970c-dcd70fe2b0c5.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 3,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "c2ac646b-721e-406b-a1a7-91700945debd.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 4,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "56980697-4622-44fb-b4ae-69cdd4e1c83b.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 5,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "7570901e-3cba-4b9f-97dd-772bf8f6aa40.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 6,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "da556408-9558-4acf-9da3-8c7256616def.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 7,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "a2f0d671-38ef-4378-b6d2-857db2f657a6.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 8,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "360bedf3-67b0-4e04-afe7-e6126264be7f.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 9,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "8a4cbdad-f9de-401c-a27e-106ece4dcc04.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 10,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "bf9d6791-3d8c-4762-8571-8979cd5b86d2.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 11,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "aa69c866-9631-4c11-bcaa-367bd9fb73e8.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 12,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "55922da1-bea4-49b5-8d6e-6c5113299199.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 13,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "e4e6ddc3-d29f-4dda-be76-e67c9291f721.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 14,
+  "title" : "Updated Title",
+  "body" : "Updated Body",
+  "car" : {
+    "manufacturer" : "KIA",
+    "model" : "Cee`d",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "b7d7dd54-3c7c-428e-a1db-e55286454e6a.jpg",
+  "price" : "100 USD/H"
 } ]
