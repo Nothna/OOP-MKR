@@ -5,6 +5,7 @@ import com.example.carsharing.Users.User;
 import com.example.carsharing.shared.Rental;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -16,13 +17,15 @@ import java.util.List;
 public class UserData {
     private String usersFilePath = System.getProperty("user.dir") + System.getProperty("file.separator") + "data" + System.getProperty("file.separator") + "users.json";
     private File usersFile;
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper;
     private long idCount;
     private final PasswordEncoder passwordEncoder;
 
     public UserData() throws IOException {
         this.usersFile = new File(usersFilePath);
         this.passwordEncoder = new BCryptPasswordEncoder();
+        this.objectMapper = new ObjectMapper();
+        this.objectMapper.registerModule(new JavaTimeModule());
 
         if (!this.usersFile.exists() || this.usersFile.length() == 0) {
             // Handle empty or non-existent file

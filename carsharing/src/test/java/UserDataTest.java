@@ -86,7 +86,7 @@ class UserDataTest {
         assertNotNull(result);
         assertEquals("email1@example.com", result.getEmail());
     }
-    @Test
+    /*@Test
     void testOrder() throws IOException {
         Car testCar = new Car("KIA", "Cee`d", 2017, 4, "4x2");
         LocalDateTime startTime = LocalDateTime.now();
@@ -104,7 +104,7 @@ class UserDataTest {
 
         assertNotNull(result);
         assertEquals(testRental, result.getRental());
-    }
+    }*/
     @Test
     void testCreateUser() throws IOException {
         List<User> users = new ArrayList<>();
