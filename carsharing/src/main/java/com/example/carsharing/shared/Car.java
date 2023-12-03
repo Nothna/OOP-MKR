@@ -12,7 +12,7 @@ public class Car {
 
     public Car(String manufacturer, String model, int year, long seats, String wheelBase) {
         this.manufacturer = manufacturer;
-        this.model = manufacturer;
+        this.model = model;
         this.year = year;
         this.seats = seats;
         this.wheelBase = wheelBase;
