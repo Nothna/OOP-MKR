@@ -17,6 +17,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.example.carsharing.Posts.Post;
+
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
@@ -86,12 +88,15 @@ class UserDataTest {
         assertNotNull(result);
         assertEquals("email1@example.com", result.getEmail());
     }
-    /*@Test
+    @Test
     void testOrder() throws IOException {
-        Car testCar = new Car("KIA", "Cee`d", 2017, 4, "4x2");
+        // Создайте объект Post вместо Car
+        Post testPost = new Post(/* Аргументы для создания объекта Post */);
         LocalDateTime startTime = LocalDateTime.now();
         LocalDateTime endTime = LocalDateTime.now().plusDays(1);
-        Rental testRental = new Rental(testCar, startTime, endTime);
+
+        // Используйте testPost при создании Rental
+        Rental testRental = new Rental(testPost, startTime, endTime);
 
         User testUser = new User(1L, "Username", "password", "user@example.com");
         List<User> users = new ArrayList<>();
@@ -104,7 +109,7 @@ class UserDataTest {
 
         assertNotNull(result);
         assertEquals(testRental, result.getRental());
-    }*/
+    }
     @Test
     void testCreateUser() throws IOException {
         List<User> users = new ArrayList<>();

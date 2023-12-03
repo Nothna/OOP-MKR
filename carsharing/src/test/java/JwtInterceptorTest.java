@@ -52,6 +52,8 @@ class JwtInterceptorTest {
     private String createValidJwtToken() {
         Algorithm algorithm = Algorithm.HMAC256("secret");
         return JWT.create()
+                .withClaim("id", 123L) // Добавление claim 'id'
+                .withClaim("email", "user@example.com") // Добавление claim 'email'
                 .withIssuer("auth0")
                 .sign(algorithm);
     }

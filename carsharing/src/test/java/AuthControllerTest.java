@@ -28,8 +28,8 @@ class AuthControllerTest {
 
     @Test
     void testSuccessfulRegistration() throws Exception {
-        CreateUserDto createUserDto = new CreateUserDto(); // Populate with test data
-        User mockUser = new User(); // Populate with test data
+        CreateUserDto createUserDto = new CreateUserDto();
+        User mockUser = new User();
         when(userData.create(any(CreateUserDto.class))).thenReturn(mockUser);
 
         ResponseEntity<?> response = authController.register(createUserDto);
@@ -40,7 +40,7 @@ class AuthControllerTest {
 
     @Test
     void testRegistrationWithExistingUser() throws IOException {
-        CreateUserDto createUserDto = new CreateUserDto(); // Populate with test data
+        CreateUserDto createUserDto = new CreateUserDto();
         when(userData.create(any(CreateUserDto.class))).thenThrow(new IOException("User already exists"));
 
         ResponseEntity<?> response = authController.register(createUserDto);
@@ -60,7 +60,7 @@ class AuthControllerTest {
         ResponseEntity<?> response = authController.register(signInUserDto);
 
         assertEquals(200, response.getStatusCodeValue());
-        assertNotNull(response.getBody()); // Check if the response body (JWT token) is not null
+        assertNotNull(response.getBody());
     }
 
     @Test
