@@ -5,21 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ccca4f-25bf-4b4e-a137-4e44708b80a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/360bedf3-67b0-4e04-afe7-e6126264be7f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/55922da1-bea4-49b5-8d6e-6c5113299199.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/56980697-4622-44fb-b4ae-69cdd4e1c83b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/6de5aeb1-14d7-4098-970c-dcd70fe2b0c5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/7570901e-3cba-4b9f-97dd-772bf8f6aa40.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/8a4cbdad-f9de-401c-a27e-106ece4dcc04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/a2f0d671-38ef-4378-b6d2-857db2f657a6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/a90cfdfd-34e5-487a-a563-de07c8a525de.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/aa69c866-9631-4c11-bcaa-367bd9fb73e8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/b7d7dd54-3c7c-428e-a1db-e55286454e6a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/bf9d6791-3d8c-4762-8571-8979cd5b86d2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/c2ac646b-721e-406b-a1a7-91700945debd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/da556408-9558-4acf-9da3-8c7256616def.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/e4e6ddc3-d29f-4dda-be76-e67c9291f721.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ItemDetail.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/0d19f98f-04ab-4072-a493-e10e5d4b9b82.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/0ee8b913-b53c-4715-bf01-976a1e0f86d4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/10e7cb76-ef80-4e0e-ad2f-d689541bf9b1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/2118478c-a412-44e2-af43-f3a122a1ddd2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/22d3391f-500e-4c91-9ece-68a1202ef76d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/47af0969-c3b9-43d9-b197-f72c6084bf41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/4c20773f-55f8-4cfc-aee0-3bf1a9037910.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/4c95fd8d-4e98-4cf1-9af2-99aa395562a0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/4cd8ef36-9a23-4ca6-abad-e452c298d15a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/4d1833a6-ab2a-4dd9-85e7-c7a888fde2b5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/62844071-5c82-47bd-85f4-1e8de57cdb3a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/658e9d8f-d854-4ba7-a94d-1f857cf38b8c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/7c921ea4-6327-41f2-8a7b-3d84072f63a6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/a09a5e93-7806-4b3e-950c-d9b25ab04cb3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/bbd3136b-46c8-4d18-8c9f-5a700a2fe81a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/c84bff81-08bd-40be-b193-8393b07f9fd6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/cc739677-026f-4bae-a8ac-8c1a3db54cbd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/d4e2abf4-25d4-4cef-bb03-7314aa20e9f0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/fe98ed8b-15a2-44bd-b9c5-6522cd4186f6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carsharing/src/main/resources/static/image/fed5474f-4f71-4c58-8641-daa5405448dd.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -27,16 +32,16 @@
       <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/8.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/build/classes/java/main/com/example/carsharing/configs/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/build/classes/java/main/com/example/carsharing/configs/CorsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/build/classes/java/main/com/example/carsharing/shared/interceptors/JwtInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/build/classes/java/main/com/example/carsharing/shared/interceptors/JwtInterceptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carsharing/data/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/data/posts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/data/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/configs/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/configs/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/shared/interceptors/JwtInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carsharing/src/main/java/com/example/carsharing/shared/interceptors/JwtInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/post/post-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/post/post-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/API/user/user-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/user/user-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/appRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/appRouter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ItemDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ItemDetail.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +49,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="48737e9dd14752d3c601c618d0245a950b4b4855" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -103,5 +114,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

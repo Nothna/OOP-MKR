@@ -1,5 +1,5 @@
 import {SignInUserDto} from "./dto/sign-in-user.dto";
-import axios from "axios";
+import axios, {AxiosResponse} from "axios";
 import {SignUpUserDto} from "./dto/sign-up-user.dto";
 
 export class UserService{
@@ -13,6 +13,11 @@ export class UserService{
         const response = await axios.post(process.env.REACT_APP_SERVER_URL + "/auth/sign_up", signUpUserDto);
         const accessToken = response.data;
         return accessToken;
+    }
+
+    public static async order(postId: number, hours: number, accessToken: string): Promise<AxiosResponse>{
+        const response = await axios.post(process.env.REACT_APP_SERVER_URL + "/users/order", {postId: postId, hours: hours});
+        return response
     }
 
 }

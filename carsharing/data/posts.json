@@ -1,14 +1,261 @@
 [ {
-  "id" : 1,
-  "title" : "Updated Title",
-  "body" : "Updated Body",
+  "id" : 2,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
   "car" : {
-    "manufacturer" : null,
-    "model" : null,
-    "year" : 0,
-    "wheelBase" : null,
-    "seats" : 0
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
   },
-  "image" : "updatedimage.jpg",
-  "price" : "100"
+  "image" : "22d3391f-500e-4c91-9ece-68a1202ef76d.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 3,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "10e7cb76-ef80-4e0e-ad2f-d689541bf9b1.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 4,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "fe98ed8b-15a2-44bd-b9c5-6522cd4186f6.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 5,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "4c20773f-55f8-4cfc-aee0-3bf1a9037910.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 6,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "47af0969-c3b9-43d9-b197-f72c6084bf41.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 7,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "0ee8b913-b53c-4715-bf01-976a1e0f86d4.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 8,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "658e9d8f-d854-4ba7-a94d-1f857cf38b8c.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 9,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "bbd3136b-46c8-4d18-8c9f-5a700a2fe81a.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 10,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "fed5474f-4f71-4c58-8641-daa5405448dd.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 11,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "62844071-5c82-47bd-85f4-1e8de57cdb3a.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 12,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "cc739677-026f-4bae-a8ac-8c1a3db54cbd.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 13,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "c84bff81-08bd-40be-b193-8393b07f9fd6.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 14,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "4c95fd8d-4e98-4cf1-9af2-99aa395562a0.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 15,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "2118478c-a412-44e2-af43-f3a122a1ddd2.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 16,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "7c921ea4-6327-41f2-8a7b-3d84072f63a6.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 17,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "d4e2abf4-25d4-4cef-bb03-7314aa20e9f0.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 18,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "4cd8ef36-9a23-4ca6-abad-e452c298d15a.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 19,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "a09a5e93-7806-4b3e-950c-d9b25ab04cb3.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 19,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "4d1833a6-ab2a-4dd9-85e7-c7a888fde2b5.jpg",
+  "price" : "100 USD/H"
+}, {
+  "id" : 20,
+  "title" : "Mersedes",
+  "body" : "This is the description of mersedes car, this is all, nothing much, though.",
+  "car" : {
+    "manufacturer" : "Mersedes",
+    "model" : "some model",
+    "year" : 2013,
+    "wheelBase" : "4x2",
+    "seats" : 4
+  },
+  "image" : "0d19f98f-04ab-4072-a493-e10e5d4b9b82.jpg",
+  "price" : "100 USD/H"
 } ]

@@ -1,13 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, {FormEvent, useEffect, useState} from 'react';
+import {useNavigate, useParams} from 'react-router-dom';
 import { PostService } from '../API/post/post-service';
 import { Post } from '../API/shared/Post';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button, Card} from "react-bootstrap";
+import {UserService} from "../API/user/user-service";
 
 const ItemDetail: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const [item, setItem] = useState<Post | null>(null);
+    const [hours, setHours] = useState(0);
+    const [errMsg, setErrMsg] = useState("");
+    const [resMsg, setResMsg] = useState("");
+
+    const router = useNavigate();
 
     useEffect(() => {
         const fetchItem = async () => {
@@ -24,6 +30,24 @@ const ItemDetail: React.FC = () => {
 
     if (!item) {
         return <div>Loading...</div>;
+    }
+
+    const order = async (event: FormEvent) =>{
+        try{
+            event.preventDefault();
+
+            const accessToken = localStorage.getItem("accessToken");
+            if(accessToken){
+                const response = await UserService.order(Number(id), hours, accessToken);
+                if (response.status === 200) setResMsg("Order success!");
+
+
+            } else router("/home");
+        } catch (e: any){
+            setErrMsg("Error occurred");
+
+        }
+
     }
 
     return (
@@ -44,10 +68,13 @@ const ItemDetail: React.FC = () => {
                 <h3 style={{color: 'goldenrod'}}>Price: ${item.price}</h3>
                 <p>Please, choose hours count</p>
                 <input
-                type={"text"}
+                type={"number"}
 
                 />
-                <Button>Order</Button>
+                <Button onClick={order}>Order</Button>
+                <label style={{color:"red"}}>{errMsg}</label>
+                <label style={{color:"green"}}>{resMsg}</label>
+
             </Card>
 
 
